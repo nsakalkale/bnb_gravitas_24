@@ -1,0 +1,174 @@
+:root {
+  --bnbwhite: rgb(234, 237, 238);
+  --bnbyellow: rgb(253, 213, 52);
+  --bnbdarkyellow: rgb(218, 182, 36);
+  --bnbyellowhover: rgb(236, 197, 41);
+  --inputborder: rgb(71, 77, 87);
+  --formborder: rgb(43, 49, 57);
+  --bnbgreen: rgb(47, 188, 133);
+  --foreground: rgb(30, 34, 40);
+  --background: rgb(24, 27, 33);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("./fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Stylish;
+  src: url("./fonts/Stylish/Stylish-Regular.ttf");
+}
+@font-face {
+  font-family: NewRocker;
+  src: url("./fonts/NewRocker/NewRocker-Regular.ttf");
+}
+@font-face {
+  font-family: AvertaStd;
+  src: url("./fonts/AvertaStd/FontsFree-Net-AvertaStandard-Regular.ttf");
+}
+.averta {
+  font-family: "AvertaStd";
+}
+.poppins {
+  font-family: "Poppins";
+}
+.stylish {
+  font-family: "Stylish";
+}
+.newrocker {
+  font-family: "NewRocker";
+}
+
+body {
+  font-family: "AvertaStd";
+  background-color: var(--background);
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.login-form {
+  border: 2px solid var(--formborder);
+  border-radius: 20px;
+  padding: 40px;
+}
+.auth-left {
+  border: 2px solid var(--formborder);
+  border-radius: 20px;
+  padding: 10px;
+  height: 90vh;
+}
+.carousel-inner {
+  height: 100vh;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control > label {
+  color: var(--bnbwhite);
+  margin-bottom: 5px;
+}
+.input-control > input {
+  background: inherit;
+  border: 2px solid var(--inputborder);
+  padding: 10px;
+  border-radius: 8px;
+
+  outline: 0px solid var(--bnbyellow);
+  color: var(--bnbwhite);
+  transition: all 0.2s;
+}
+
+.input-control > input:active,
+.input-control > input:focus {
+  border: 2px solid var(--bnbyellow);
+}
+
+.text-bnbwhite {
+  color: var(--bnbwhite);
+}
+.btn-bnb {
+  padding: 10px 15px 10px 15px;
+  border-radius: 7px;
+  transition: all 0.2s;
+}
+.btn-bnb-original {
+  background: inherit;
+  color: var(--bnbwhite);
+  border: 2px solid var(--inputborder);
+}
+.btn-bnb-yellow {
+  background: var(--bnbyellow);
+  color: rgb(22, 22, 22);
+  border: none;
+  outline: none;
+}
+.btn-bnb-yellow:hover {
+  background: var(--bnbyellowhover);
+}
+.btn-bnb-yellow:active {
+  background: var(--bnbdarkyellow);
+}
+.navbar {
+  background: inherit;
+  padding: 20px;
+  border: 2px solid var(--formborder);
+  box-sizing: border-box;
+  color: var(--bnbwhite);
+  z-index: 11;
+  background: var(--background);
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  color: var(--bnbwhite);
+  border: 2px solid var(--formborder);
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--foreground);
+  overflow-y: auto;
+}
+.sidebar > div {
+  padding: 10px 15px;
+  margin: 7px 5px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.sidebar .active {
+  background: var(--bnbyellow);
+  color: black;
+}
+.fundamentals {
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--bnbwhite);
+  background: var(--foreground);
+  z-index: 1;
+}
+.greeting {
+  color: var(--bnbyellow);
+  position: fixed;
+  z-index: 10;
+  background: var(--background);
+  width: 100%;
+  padding: 10px 0px;
+}
+.analysis {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+.content {
+  margin-left: 24%;
+  width: 100%;
+}
+.table > tr > td {
+  border: 2px solid var(--inputborder);
+}
